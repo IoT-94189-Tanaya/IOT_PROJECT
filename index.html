@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environment Monitoring</title>
+    <meta http-equiv="refresh" content="5">
+
+</head>
+<body>
+    <h1>Smart Environment Dashboard</h1>
+
+{% if row %}
+    <h2>Temperature: {{ row.temperature }} °C</h2>
+    <h2>Humidity: {{ row.humidity }} %</h2>
+    <h2>Gas: {{ row.gas }}</h2>
+    <h3>Time: {{ row.created_at }}</h3>
+{% else %}
+    <h2>No data available</h2>
+{% endif %}
+
+    </table>
+
+</body>
+</html>
